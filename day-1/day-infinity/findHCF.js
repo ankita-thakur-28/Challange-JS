@@ -1,0 +1,13 @@
+//program to find the HCF of two integer//
+
+let hcf;
+const number1 = parseInt(prompt('Enter a first number'));
+const number2 = parseInt(prompt('Enter a second number'));
+
+for( let i = 1; i <= number1 && i <= number2; i++){
+
+    if( number1 % i === 0 && number2 % i === 0){
+      hcf = i;
+   }
+}
+console.log(`HCF of ${number1} and ${number2} is ${hcf}`);
